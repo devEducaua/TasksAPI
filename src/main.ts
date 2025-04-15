@@ -8,4 +8,4 @@ app.use(express.json());
 app.use("/users", userRouter);
 app.use("/tasks", taskRouter)
 
-app.listen( 3000, () => console.log("Server running"));
+app.listen( process.env.PORT, () => console.log("Server running"));
